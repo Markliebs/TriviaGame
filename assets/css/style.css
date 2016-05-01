@@ -1,11 +1,13 @@
 .voltron {
 	background-image: url("../images/voltron.jpg");
 	float: right;
+	background-size: 350px 600px;
+	background-repeat: no-repeat;
 	height: 600px;
-	width: 50%;
+	width: 30%;
 }
 .jumbotron {	
 	float: left;	
-	width: 50%;
+	width: 70%;
 	text-align: center;
 }
