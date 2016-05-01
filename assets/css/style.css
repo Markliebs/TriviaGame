@@ -1,3 +1,6 @@
-#background {
+.back {
 	background-image: url("assets/images/voltron.jpg");
+}
+.jumbotron {	
+	text-align: center;
 }
