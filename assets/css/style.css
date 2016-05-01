@@ -1,4 +1,4 @@
-.voltron {
+.backImg {
 	background-image: url("../images/voltron.jpg");
 	float: right;
 	background-size: 350px 600px;
@@ -9,5 +9,6 @@
 .jumbotron {	
 	float: left;	
 	width: 70%;
+	height: 600px;
 	text-align: center;
 }
