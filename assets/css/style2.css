@@ -2,12 +2,20 @@
 	background-image: url("../images/voltron.jpg");
 	float: right;
 	float: top;
-	background-size: 100% 100%;
+	background-size: 120% 120%;
 	background-repeat: no-repeat;
 	height: 600px;
 	width: 30%;
 }
-
+.digits {
+	text-align: center;
+}
+.headline {
+	text-align: center;
+}
+.questions {
+	text-align: center;
+}
 
 
 
