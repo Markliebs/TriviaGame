@@ -2,9 +2,9 @@
 	background-image: url("../images/voltron.jpg");
 	float: right;
 	float: top;
-	background-size: 120% 120%;
+	background-size: 100% 100%;
 	background-repeat: no-repeat;
-	height: 600px;
+	height: 800px;
 	width: 30%;
 }
 .digits {
