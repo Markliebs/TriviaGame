@@ -1,4 +1,4 @@
-setTimeout(timeUp, 120000);
+setTimeout(timeUp, 10000);
 
 function timeConverter(t) {
 	var minutes = Math.floor(t / 60);
@@ -17,7 +17,7 @@ $(document).ready(function () {
 	setTimeout(function () {
 		alert("Close this window to begin");
 	},1000);
-	time = 120
+	time = 10
 	$("#timer").html("02:00");
 	
 
@@ -32,16 +32,18 @@ $(document).ready(function () {
 
 
 function timeUp(){
-	$("#timer").html("Time's Up!");
-	console.log("time's up!");
+	$( ".digits").replaceWith("<h2><center>Time's<br>Up!<center></h2>");
+	$( ".headline").replaceWith("<h3><center>How did you do?<center></h3>");
+	console.log("Time's Up!");
+	console.log("How did you do?")
 	if(time <= 1){
-    
-      clearInterval(counter)
+      clearInterval(counter);
+		
 	}
 	
 }
 
-
+//Nothing to see here, move along
 //if(timer == 0){
 //       setInterval(countdown, 0);
 //			 console.log("Time's Up!");
