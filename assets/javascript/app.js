@@ -1,4 +1,4 @@
-setTimeout(timeUp, 10000);
+setTimeout(timeUp, 120000);
 
 function timeConverter(t) {
 	var minutes = Math.floor(t / 60);
@@ -17,7 +17,7 @@ $(document).ready(function () {
 	setTimeout(function () {
 		alert("Close this window to begin");
 	}, 1000);
-	time = 10
+	time = 120;
 	$("#timer").html("02:00");
 
 
@@ -28,7 +28,7 @@ $(document).ready(function () {
 	}
 	counter = setInterval(countDown, 1000);
 
-})
+});
 
 
 function timeUp() {
@@ -40,15 +40,8 @@ function timeUp() {
 	if (time <= 1) {
 		clearInterval(counter);
 	}
-	$(".question1").click(function () {
-		if ($('#optionsRadios4').is(':checked')) {
-			alert("it's checked");
-			console.log("work damn you work");
-		}
-	});
-
 }
-
+   
 //Nothing to see here, move along
 //if(timer == 0){
 //       setInterval(countdown, 0);
