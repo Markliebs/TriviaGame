@@ -15,8 +15,9 @@ $(document).ready(function () {
 	setTimeout(function () {
 		alert("Close this window to begin");
 	});
-	time = 120
+	time = 10
 	$("#timer").html("02:00");
+	
 
 	function countDown() {
 		time--;
@@ -24,4 +25,15 @@ $(document).ready(function () {
 		$("#timer").html(currentTime);
 	}
 	counter = setInterval(countDown, 1000);
+	
 })
+
+if(timer == 0){
+	time = 0
+       setInterval(countdown, 0);
+			 console.log("Time's Up!");
+}
+
+//if (minutes = 0) and (seconds = 0) {
+//	counter = setInterval(0);
+//}
