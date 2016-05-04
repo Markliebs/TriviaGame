@@ -41,8 +41,7 @@ function timeUp() {
 		clearInterval(counter);
 	}
 	$(".question1").click(function () {
-		$("#optionsRadios4").attr("checked", "checked");
-		if ($('#optionsRadios4').is('checked')) {
+		if ($('#optionsRadios4').is(':checked')) {
 			alert("it's checked");
 			console.log("work damn you work");
 		}
