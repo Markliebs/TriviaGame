@@ -16,10 +16,10 @@ function timeConverter(t) {
 $(document).ready(function () {
 	setTimeout(function () {
 		alert("Close this window to begin");
-	},1000);
+	}, 1000);
 	time = 10
 	$("#timer").html("02:00");
-	
+
 
 	function countDown() {
 		time--;
@@ -27,20 +27,27 @@ $(document).ready(function () {
 		$("#timer").html(currentTime);
 	}
 	counter = setInterval(countDown, 1000);
-	
+
 })
 
 
-function timeUp(){
-	$( ".digits").replaceWith("<h2><center>Time's<br>Up!<center></h2>");
-	$( ".headline").replaceWith("<h3><center>How did you do?<center></h3>");
-	console.log("Time's Up!");
-	console.log("How did you do?")
-	if(time <= 1){
-      clearInterval(counter);
-		
+function timeUp() {
+	$(".digits").replaceWith("<h2><center>Time's<br>Up!<center></h2>");
+	$(".headline").replaceWith("<h3><center>How did you do?<center></h3>");
+	$(".questions").replaceWith("<h1><center>Test</center></h1>");
+	//	console.log("Time's Up!");
+	//	console.log("How did you do?")
+	if (time <= 1) {
+		clearInterval(counter);
 	}
-	
+	$(".question1").click(function () {
+		$("#optionsRadios4").attr("checked", "checked");
+		if ($('#optionsRadios4').is('checked')) {
+			alert("it's checked");
+			console.log("work damn you work");
+		}
+	});
+
 }
 
 //Nothing to see here, move along
