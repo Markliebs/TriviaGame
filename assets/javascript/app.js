@@ -1,3 +1,5 @@
+setTimeout(timeUp, 120000);
+
 function timeConverter(t) {
 	var minutes = Math.floor(t / 60);
 	var seconds = t - (minutes * 60);
@@ -14,8 +16,8 @@ function timeConverter(t) {
 $(document).ready(function () {
 	setTimeout(function () {
 		alert("Close this window to begin");
-	});
-	time = 10
+	},1000);
+	time = 120
 	$("#timer").html("02:00");
 	
 
@@ -28,11 +30,22 @@ $(document).ready(function () {
 	
 })
 
-if(timer == 0){
-	time = 0
-       setInterval(countdown, 0);
-			 console.log("Time's Up!");
+
+function timeUp(){
+	$("#timer").html("Time's Up!");
+	console.log("time's up!");
+	if(time <= 1){
+    
+      clearInterval(counter)
+	}
+	
 }
+
+
+//if(timer == 0){
+//       setInterval(countdown, 0);
+//			 console.log("Time's Up!");
+//}
 
 //if (minutes = 0) and (seconds = 0) {
 //	counter = setInterval(0);
